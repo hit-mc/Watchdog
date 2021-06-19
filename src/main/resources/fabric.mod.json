@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "watchdog",
+  "version": "${version}",
+
+  "name": "Watchdog Mod",
+  "description": "More powerful watchdog, more than just shutting down your server.",
+  "authors": [
+    "trueKeuin"
+  ],
+  "contact": {
+    "homepage": "https://keuin.cc",
+    "sources": "https://github.com/keuin"
+  },
+
+  "license": "BSD Clause-2",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      "com.keuin.watchdog.WatchdogMod"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
